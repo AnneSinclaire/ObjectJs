@@ -1,0 +1,16 @@
+<script>
+    var mobil = { 
+        
+        merek : "Toyota Avanza",
+        tipe  : "MVP",
+        harga : 200000000,
+        warna : "Merah",
+        pergi : function (tempat)  {return "Pergi ke " + tempat;}
+    };
+
+    console.log(mobil.pergi("Medan"));
+
+    mobil.pergi = "method nya tertimpa";
+
+    console.log(mobil.pergi("medan"));
+</script>
